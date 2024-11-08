@@ -1,0 +1,106 @@
+#include <stdio.h>
+int main(){
+    char ch = 'A';
+    printf("%d", ch);
+    return 0;
+}
+#include <stdio.h>
+int main(){
+    int x;
+    printf("Write a number:");
+    scanf("%d", &x);
+
+    if (x%5==0){
+        printf("Divisible by 5");
+    }
+    else{
+        printf("Not divisible by 5");
+    }
+    return 0;
+}
+#include<stdio.h>
+int main(){
+    int year;
+    printf("Enter a year:");
+    scanf("%d",&year);
+
+    if (year%4==0){
+        printf("This is a leap year:");
+    }
+    else{
+        printf("This is not a leap year");
+    }
+#include<stdio.h>
+int main(){
+    int x;
+    printf("Enter the value of x:");
+    scanf("%d",&x);
+    if (x<=0){
+        x = x*-1;
+    }
+    printf("The absolute of input is: %d ",x);
+return 0;
+}#include <stdio.h>
+int main(){
+    int CI;
+    printf("Enter the cost price:");
+    scanf("%d",&CI);
+
+    int SI;
+    printf("Enter the selling price:");
+    scanf("%d",&SI);
+
+    int profit = SI - CI;
+    int loss = CI - SI;
+
+    if (SI > CI){
+        printf("The seller has made a profit of: %d", profit);
+    }
+    else if (CI == SI){
+        printf("The seller has made neither a loss no profit");
+    }
+    else{
+        printf("There was a loss of %d:",loss);  
+    }
+    return 0;   
+}#include<stdio.h>
+int main(){
+    int length;
+    printf("Enter the length of a rectangle:");
+    scanf("%d",&length);
+
+    int breadth;
+    printf("Enter the breadth of a rectangle:");
+    scanf("%d",&breadth);
+
+    int area = length * breadth;
+    int perimeter = (length + breadth)*2;
+    printf("Area of rectangle is %d \n", area);
+    printf("Perimeter of rectangle is %d \n", perimeter);
+    int x = area - perimeter;
+    int y = perimeter - area;
+
+    if (area > perimeter){
+        printf("Area is greater than perimeter by:%d\n",x);
+    }
+    else if(perimeter > area){
+        printf("perimeter is greater than area by:%d\n",y);        
+    }
+    else{
+        printf("Area and perimeter are same\n");
+    }
+    return 0;
+}#include <stdio.h>
+int main(){
+    int n;
+    printf("Enter a number");
+    scanf("%d",&n);
+    if (n>99 && n <1000){
+        printf("It is a three digit number");
+    }
+    else{
+        printf("It is not a three digit number");
+    }
+}
+    return 0;
+}
